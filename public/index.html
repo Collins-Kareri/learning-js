@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- how it can be able the browser to read data  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--fits the width of the 
+    screen-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--ensures compatibility of the browser-->
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id='heading'>Notes App</h1>
+    <h2 class='heading'>Information store</h2>
+    <input id="search-text" type="text" placeholder="filter notes" />
+    <select id='filter-by'>
+        <option value='byEdited'>sort by last edited</option>
+        <option value='byCreated'>sort by recently added</option>
+        <option value='alphabetical'>alphabetically</option>
+    </select>
+    <div id="notes"></div>
+    <button id="createNotes">Create note</button>
+    <script src='/scripts/app-bundle.js'></script>
+</body>
+
+</html>
